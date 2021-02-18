@@ -1,7 +1,7 @@
 {
-  "name": "@snapshot-labs/snapshot.js",
+  "name": "hecovote.js",
   "version": "0.1.4",
-  "repository": "snapshot-labs/snapshot.js",
+  "repository": "hecovote.js",
   "license": "MIT",
   "main": "dist/snapshot.cjs.js",
   "module": "dist/snapshot.esm.js",
