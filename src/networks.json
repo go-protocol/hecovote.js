@@ -15,8 +15,8 @@
     "shortName": "heco",
     "chainId": 128,
     "network": "Mainnet",
-    "rpc": ["https://http-mainnet.hecochain.com"],
-    "ws": ["wss://ws-mainnet.hecochain.com"],
+    "rpc": ["https://http-mainnet-node.huobichain.com"],
+    "ws": ["wss://ws-mainnet-node.huobichain.com"],
     "explorer": "https://scan.hecochain.com"
   }
 }
