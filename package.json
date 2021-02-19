@@ -1,6 +1,6 @@
 {
   "name": "hecovote.js",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "repository": "hecovote.js",
   "license": "MIT",
   "main": "dist/snapshot.cjs.js",
