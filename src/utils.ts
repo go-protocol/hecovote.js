@@ -74,6 +74,46 @@ export async function subgraphRequest(url: string, query, options: any = {}) {
   return data || {};
 }
 
+export async function getSapceExist(id:string) {
+  try {
+    const provider = id.includes('.heco') ? getProvider('128') : getProvider('256')
+    const contractAddress = id.includes('.heco') ? '0xC403190d6155cd2A44fBe80A09c23cf3707B1B69' : '0xB14C5711db68081C52C5Bf6825741Bd28B3255d1'
+    const abi = [ {
+      inputs: [{
+        internalType: "string",
+        name: "name",
+        type: "string"
+      }],
+      name: "spaceExist",
+      outputs: [{
+        internalType: "bool",
+        name: "",
+        type: "bool"
+      }],
+      stateMutability: "view",
+      type: "function"
+    }]
+    console.log('this.contractAddress',contractAddress)
+    const result = await call(provider, abi, [
+      contractAddress.toLowerCase(),
+      'spaceExist'
+      [id]
+    ]);
+    console.log(result)
+    this.spaceExist = result;
+  } catch (e) {
+    console.log('spaceExist err:',e);
+  }
+}
+
+export async function fleekGet(
+  address: string,
+  id: string
+) {
+  const url = 'https://fankouzu-team-bucket.storage.fleek.co/registry/'+address+'/'+id;
+  return fetch(url).then((res) => res.json());
+}
+
 export async function ipfsGet(
   gateway: string,
   ipfsHash: string,
@@ -138,6 +178,7 @@ export default {
   multicall,
   subgraphRequest,
   ipfsGet,
+  fleekGet,
   sendTransaction,
   getScores,
   validateSchema,
