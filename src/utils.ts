@@ -100,7 +100,7 @@ export async function getSapceExist(id:string) {
       [id]
     ]);
     console.log(result)
-    this.spaceExist = result;
+    return result
   } catch (e) {
     console.log('spaceExist err:',e);
   }
