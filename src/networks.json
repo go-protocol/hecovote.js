@@ -1,7 +1,7 @@
 {
   "256": {
     "key": "256",
-    "name": "Huobi Eco Chain Testnet",
+    "name": "火币生态链测试网Testnet",
     "shortName": "heco",
     "chainId": 256,
     "network": "testnet",
@@ -11,7 +11,7 @@
   },
   "128": {
     "key": "128",
-    "name": "Huobi Eco Chain Mainnet",
+    "name": "火币生态链主网Mainnet",
     "shortName": "heco",
     "chainId": 128,
     "network": "Mainnet",
