@@ -15,7 +15,7 @@
     "shortName": "heco",
     "chainId": 128,
     "network": "Mainnet",
-    "rpc": ["https://http-mainnet-node.huobichain.com"],
+    "rpc": ["https://node.goswap.app"],
     "ws": ["wss://ws-mainnet-node.huobichain.com"],
     "explorer": "https://hecoinfo.com"
   }
