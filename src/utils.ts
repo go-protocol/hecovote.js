@@ -74,7 +74,7 @@ export async function subgraphRequest(url: string, query, options: any = {}) {
   return data || {};
 }
 
-export async function getSapceExist(id: string) {
+export async function getSpaceExist(id: string) {
   const provider = id.includes('.heco') ? getProvider('128') : getProvider('256')
   const contractAddress = id.includes('.heco') ? '0xC403190d6155cd2A44fBe80A09c23cf3707B1B69' : '0xB14C5711db68081C52C5Bf6825741Bd28B3255d1'
   const abi = [{
@@ -201,7 +201,7 @@ export default {
   subgraphRequest,
   ipfsGet,
   fleekGet,
-  getSapceExist,
+  getSpaceExist,
   getSpace,
   sendTransaction,
   getScores,

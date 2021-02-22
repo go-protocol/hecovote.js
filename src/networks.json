@@ -7,7 +7,7 @@
     "network": "testnet",
     "rpc": ["https://http-testnet.hecochain.com"],
     "ws": ["wss://ws-testnet.hecochain.com"],
-    "explorer": "https://scan-testnet.hecochain.com"
+    "explorer": "https://testnet.hecoinfo.com/"
   },
   "128": {
     "key": "128",
@@ -17,6 +17,6 @@
     "network": "Mainnet",
     "rpc": ["https://http-mainnet-node.huobichain.com"],
     "ws": ["wss://ws-mainnet-node.huobichain.com"],
-    "explorer": "https://scan.hecochain.com"
+    "explorer": "https://hecoinfo.com"
   }
 }
